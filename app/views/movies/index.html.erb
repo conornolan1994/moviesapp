@@ -6,6 +6,7 @@
   <thead>
     <tr>
       <th>Title</th>
+	  <th>Poster</th>
       <th>Trailer</th>
       <th>Release on</th>
       <th>Rating</th>
@@ -18,6 +19,7 @@
     <% @movies.each do |movie| %>
       <tr>
         <td><%= movie.title %></td>
+		
         <td><%= movie.trailer %></td>
         <td><%= movie.release_on %></td>
         <td><%= movie.rating %></td>
@@ -32,4 +34,8 @@
 
 <br>
 
+
+
 <%= link_to 'New Movie', new_movie_path %>
+
+<%= will_paginate @movies %>

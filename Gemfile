@@ -10,6 +10,7 @@ gem 'coffee-script-source', '1.8.0'
 gem 'rails', '~> 5.1.4'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+gem 'will_paginate','~>3.1'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
